@@ -20,6 +20,7 @@ Features
 - No telemetry or model dependencies
 - Works on EdgeTX 2.11+
 - Image files must be stored inside the images folder
+- Image names must be a maximum of 8 characters, .png must be added at the end e.g. image1.png
 
 Possible Use Cases
 - Screen Saver: Display a custom image when the radio is idle, such as a logo, call sign, or dark-themed background.
