@@ -8,19 +8,21 @@ https://github.com/moshirfakhoury/edgetx-postflight-widget
 
 Overview
 
-This is a simple full-screen image widget for EdgeTX 2.11+ radios with large color displays (such as the RadioMaster TX16S).
-The widget displays a single PNG image scaled to fit the screen. The image filename is user-selectable via the widget settings, allowing easy customization without editing the Lua code.
-This widget is intentionally minimal and stable, focusing on reliable image loading and display using the EdgeTX widget API.
+This is a full-screen image widget for EdgeTX 2.11+ radios with large color displays (e.g., RadioMaster TX16S). The widget displays PNG images scaled to fit the screen and supports multiple images selectable via widget options. It is simple, stable, and flexible, allowing easy customization without editing the Lua code. A key feature is the built-in slideshow, which can automatically cycle through multiple images every 8 seconds.
 
 Features
 - Full-screen image display (480×272)
-- User-selectable image filename via widget options
-- Automatic scaling and centering
-- Optimized to load using the APP widget layout
+- User-selectable image filenames via widget options (up to 8 images)
+- Automatic .png file extension handling
+- Slideshow mode: automatically cycles through non-empty images every 8 seconds
+- Numeric selection of a single image via the Select parameter (1–8)
+- Images are automatically scaled and centered
+- Optimized for use in APP widget layout
 - No telemetry or model dependencies
-- Works on EdgeTX 2.11+
+- Compatible with EdgeTX 2.11+
 - Image files must be stored inside the images folder
-- Image names must be a maximum of 8 characters, .png must be added at the end e.g. image1.png
+- Image names can be up to 12 characters long; .png is automatically appended if omitted
+
 
 Possible Use Cases
 - Screen Saver: Display a custom image when the radio is idle, such as a logo, call sign, or dark-themed background.
@@ -28,4 +30,10 @@ Possible Use Cases
 - Model Photo: Display a photo or rendered image of the currently selected model for quick visual identification.
 - Branding or Personalization: Add a personal logo, club branding, or event-specific image.
 
-<img width="501" height="292" alt="image" src="https://github.com/user-attachments/assets/3ee7a156-1f6a-4475-9a6b-9ea5baffccb8" />
+Usage Notes
+- Image names can be up to 12 characters long; .png is automatically appended if omitted
+- Empty image slots are ignored in slideshow mode
+- If a specified image file cannot be found, an empty widget is returned - no errors
+- The slideshow loops continuously through available images
+
+
