@@ -36,4 +36,5 @@ Usage Notes
 - If a specified image file cannot be found, an empty widget is returned - no errors
 - The slideshow loops continuously through available images
 
+<img width="493" height="287" alt="image" src="https://github.com/user-attachments/assets/c6520b4d-965b-462d-a982-126b94d89599" />
 
