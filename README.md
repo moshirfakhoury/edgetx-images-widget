@@ -6,6 +6,8 @@ https://github.com/moshirfakhoury/edgetx-flightdash-widget
 
 https://github.com/moshirfakhoury/edgetx-postflight-widget
 
+https://github.com/moshirfakhoury/edgetx-servicechecklist-widget
+
 Overview
 
 This is a full-screen image widget for EdgeTX 2.11+ radios with large color displays (e.g., RadioMaster TX16S). The widget displays PNG images scaled to fit the screen and supports multiple images selectable via widget options. It is simple, stable, and flexible, allowing easy customization without editing the Lua code. A key feature is the built-in slideshow, which can automatically cycle through multiple images every 8 seconds.
