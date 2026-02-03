@@ -38,5 +38,12 @@ Usage Notes
 - If a specified image file cannot be found, an empty widget is returned - no errors
 - The slideshow loops continuously through available images
 
+Installation
+- Download the ZIP file
+- Extract the contents of the ZIP file
+- Find the last folder named Images (it contains main.lua, README.txt, and images folder)
+- Copy only the Images folder
+- Paste it into your SDCard/WIDGETS directory
+
 <img width="493" height="287" alt="image" src="https://github.com/user-attachments/assets/c6520b4d-965b-462d-a982-126b94d89599" />
 
